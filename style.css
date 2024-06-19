@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+FR+Moderne:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+nav{
+background-color: pink;
+color: white;
+display : flex;
+height: 60px;
+justify-content: center;
+padding: 2.5px,0px,2.5px,0px;
+font-size: 27px;
+font-family: "Playwrite FR Moderne", cursive;
+
+}
+nav ul{
+list-style: none;
+}
+.gamecontainor{
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.containor{
+    display: grid;
+    grid-template-rows: repeat(3,10vw);
+    grid-template-columns: repeat(3,10vw);
+    margin-right: 30px;
+}
+.box{
+    border: 2px,solid,black;
+    display: flex;
+    cursor: pointer;
+    font-size: 8vw;
+   font-family: "Roboto", sans-serif;
+   justify-content: center;
+   align-items: center;
+
+}
+.box:hover{
+    background-color: rgb(209, 222, 238);
+}
+
+
+.bt{
+    border-top: 0;
+}
+.br{
+    border-right:  0;
+}
+.bl{
+    border-left: 0;
+}
+.bb{
+    border-bottom: 0;
+}
+.imgbox img{
+   width: 0px ;
+   transition: width 1s ease-in-out ;
+}
+.info{
+    padding: 0,34px;
+}
